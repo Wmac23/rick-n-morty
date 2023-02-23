@@ -9,25 +9,23 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">   <Nav />
+   <><Nav />
+   
+   <div className="App">
+
       <img src="./src/assets/PngItem_438051 1.png" alt="" />
       <div>
         <ul>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </ul>
-
       </div>
-
     </div>
-    <>
-   
-      <Footer />
-    </>
+    <Footer /></>
   );
 }
 
