@@ -1,4 +1,5 @@
 import { useQuery, gql } from "@apollo/client";
+import { NavLink } from "react-router-dom";
 import LoadButton from "../../components/library/buttons/LoadButton/LoadButton";
 import Card from "../../components/library/visual/Card";
 
@@ -34,7 +35,9 @@ export default function Characters() {
         />
         <ul>
           {data.characters.results.map(({ id, name, species, image }) => (
-            <Card key={id} image={image} title={name} subtitle={species} />
+            <NavLink to={"/CharactersDetail/" + id}>
+              <Card key={id} image={image} title={name} subtitle={species} />
+            </NavLink>
           ))}
         </ul>
         <LoadButton />
