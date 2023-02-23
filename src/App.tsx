@@ -4,6 +4,7 @@ import Card from "./components/library/visual/Card";
 
 import Footer from "./components/footer/Footer";
 import Nav from "./components/nav/Nav";
+import LoadButton from "./components/library/buttons/LoadButton/LoadButton";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
           </ul>
         </div>
       </div>
+      <LoadButton />
       <Footer />
     </>
   );
