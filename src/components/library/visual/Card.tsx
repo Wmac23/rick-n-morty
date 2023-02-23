@@ -1,5 +1,5 @@
-import React from 'react';
-import './CardStyle.css';
+import React from "react";
+import "./CardStyle.css";
 
 interface CardProps {
   image?: string;
@@ -8,18 +8,12 @@ interface CardProps {
   onClick?: () => void;
 }
 
-export default function Card({
-    image = "./src/assets/ricknmorty.png",
-    title,
-    subtitle,
-  }: CardProps) {
-
-
+export default function Card({ image, title, subtitle }: CardProps) {
   return (
     <div className="cardComponent">
-      <img src={image}/>
+      <img src={image} />
       <h2>{title}</h2>
-     <p>{subtitle}</p>
+      <p>{subtitle}</p>
     </div>
   );
-};
+}

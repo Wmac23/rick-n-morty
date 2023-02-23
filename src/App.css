@@ -51,3 +51,14 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 600px;
+}

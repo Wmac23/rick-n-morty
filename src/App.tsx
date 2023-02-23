@@ -21,8 +21,8 @@ function App() {
         <Route path="/Locations" element={<Locations />} />
         <Route path="/Episodes" element={<Episodes />} />
         <Route path="/CharactersDetail" element={<CharactersDetail />} />
-        <Route path="/LocationsDetail" element={<LocationsDetail  />} />
-        <Route path="/EpisodesDetail" element={<EpisodesDetail  />} />
+        <Route path="/LocationsDetail" element={<LocationsDetail />} />
+        <Route path="/EpisodesDetail" element={<EpisodesDetail />} />
       </Routes>
       <Footer />
     </>
