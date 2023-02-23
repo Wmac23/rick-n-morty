@@ -12,6 +12,8 @@
     padding: 0px;
     cursor: pointer;
     text-align: left;
+    float: left;
+    margin: 2.5em;
   }
   
   .cardComponent img {
