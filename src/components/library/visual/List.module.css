@@ -5,16 +5,19 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.25px; 
+    letter-spacing: 0.25px;
+     
 }
 
 ul{
   list-style-type: none;
+  margin-top: 3em;
   margin-bottom: 3em;
+  display: inline;
 }
 
 li{
-    border-bottom: 1px solid rgba(135, 253, 110, 0.5);
+    border-bottom: 1px solid rgba(135, 253, 110, 0.5); 
 }
 
 label{

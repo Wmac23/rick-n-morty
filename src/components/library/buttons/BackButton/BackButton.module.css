@@ -1,0 +1,15 @@
+.backBtn {
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(#00B0C8);
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #00B0C8;
+    border: 0.15em solid #00B0C8;
+    position: absolute;
+    left: 100px;
+  }

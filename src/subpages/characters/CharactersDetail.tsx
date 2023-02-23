@@ -1,11 +1,14 @@
 import Card from "../../components/library/visual/Card";
+import List from "../../components/library/visual/List";
 export default function CharactersDetail() {
   return (
     <>
-      <img src="./src/assets/PngItem_438051 1.png" alt="" />
-      <ul>
+    <div>
         <Card />
-      </ul>
+        </div>
+        <div>
+        <List/>
+    </div>
     </>
   );
 }

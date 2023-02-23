@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"
 import ListCSS from './List.module.css'
 
-export const List = () => {
+export default function List () {
   
    let ObjectList =[
     {
@@ -20,7 +20,7 @@ export const List = () => {
         lists.push(
 
           <div className={ListCSS.default} key={index}>
-            <motion.ul whileHover={{ scale: 1.2,}}>
+            <ul>
               <motion.li whileHover={{ scale: 1.2, backgroundColor: ['rgb(255,255,255)','rgba(245, 245, 245)', 'rgb(245, 245, 245)'] }}>
               <label> Specie:</label> <p>{item.specie}</p> </motion.li>
               <motion.li whileHover={{ scale: 1.2, backgroundColor: ['rgb(255,255,255)','rgba(245, 245, 245)', 'rgb(245, 245, 245)'] }}>
@@ -31,7 +31,7 @@ export const List = () => {
               <label> Origin:</label>  <p>{item.origin}</p></motion.li> 
               <motion.li whileHover={{ scale: 1.2, backgroundColor: ['rgb(255,255,255)','rgba(245, 245, 245)', 'rgb(245, 245, 245)'] }}>
               <label>Location:</label> <p>{item.location}</p></motion.li>
-            </motion.ul>
+            </ul>
           </div>
         );
       });
