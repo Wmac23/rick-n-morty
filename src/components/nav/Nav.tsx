@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import navStyles from "./Nav.module.css";
 
 export default function Nav() {
@@ -7,13 +8,13 @@ export default function Nav() {
       <img className={navStyles.logo} src="..//src/assets/logo.png" alt="" />
       <ul className={navStyles.menu}>
         <li>
-          <a href="#">Characters</a>
+          <NavLink to="/">Characters</NavLink>
         </li>
         <li>
-          <a href="#">Locations</a>
+          <NavLink to="/Locations">Locations</NavLink>
         </li>
         <li>
-          <a href="#">Episodes</a>
+          <NavLink to="/Episodes">Episodes</NavLink>
         </li>
       </ul>
     </nav>

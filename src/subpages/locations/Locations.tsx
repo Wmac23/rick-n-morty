@@ -10,8 +10,6 @@ export default function Locations() {
         <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
       </ul>
       <LoadButton />
     </>

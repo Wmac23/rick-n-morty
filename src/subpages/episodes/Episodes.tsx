@@ -11,7 +11,6 @@ export default function Episodes() {
         <Card />
         <Card />
         <Card />
-        <Card />
       </ul>
       <LoadButton />
     </>
