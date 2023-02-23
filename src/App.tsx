@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import Card from "./components/library/visual/Card";
 
-
-
+import Footer from "./components/footer/Footer";
+import Nav from "./components/nav/Nav";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App">   <Nav />
       <img src="./src/assets/PngItem_438051 1.png" alt="" />
       <div>
         <ul>
@@ -24,6 +24,10 @@ function App() {
       </div>
 
     </div>
+    <>
+   
+      <Footer />
+    </>
   );
 }
 
