@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
