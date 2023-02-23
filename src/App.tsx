@@ -2,12 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Nav from "./components/nav/Nav";
-import FrontPage from "./subpages/characters/Characters";
-import LoadButton from "./components/library/buttons/LoadButton/LoadButton";
 import Characters from "./subpages/characters/Characters";
 import { Route, Routes } from "react-router-dom";
 import Episodes from "./subpages/episodes/Episodes";
 import Locations from "./subpages/locations/Locations";
+import CharactersDetail from "./subpages/characters/CharactersDetail";
+import LocationsDetail from "./subpages/locations/LocationsDetail";
+import EpisodesDetail from "./subpages/episodes/EpisodeDetail";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,9 @@ function App() {
         <Route path="/" element={<Characters />} />
         <Route path="/Locations" element={<Locations />} />
         <Route path="/Episodes" element={<Episodes />} />
+        <Route path="/CharactersDetail" element={<CharactersDetail />} />
+        <Route path="/LocationsDetail" element={<LocationsDetail  />} />
+        <Route path="/EpisodesDetail" element={<EpisodesDetail  />} />
       </Routes>
       <Footer />
     </>
