@@ -5,12 +5,14 @@ export default function Locations() {
   return (
     <>
       <img src="./src/assets/PngItem_438051 1.png" alt="" />
-      <ul>
+      <div>
         <Card />
         <Card />
         <Card />
         <Card />
-      </ul>
+        <Card />
+        <Card />
+      </div>
       <LoadButton />
     </>
   );
