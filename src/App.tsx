@@ -18,8 +18,19 @@ const GET_CHARACTERS = gql`
         id
       }
     }
+    episodes{
+      results{
+        id
+      }
+    }
+    locations{
+      results{
+        id
+      }
+    }
   }
 `;
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,14 +43,29 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Characters />} />
-        <Route path="/Locations" element={<Locations />} />
-        <Route path="/Episodes" element={<Episodes />} />
         {data.characters.results.map(({ id }) => (
           <Route
             path={"/CharactersDetail/" + id}
             element={<CharactersDetail />}
           />
         ))}
+
+        <Route path="/Locations" element={<Locations />} />
+        {data.locations.results.map(({ id }) => (
+          <Route
+            path={"/LocationsDetail/" + id}
+            element={<LocationsDetail />}
+          />
+        ))}
+
+        <Route path="/Episodes" element={<Episodes />} />
+        {data.episodes.results.map(({ id }) => (
+          <Route
+            path={"/EpisodeDetail/" + id}
+            element={<EpisodesDetail />}
+          />
+        ))}
+        
         <Route path="/LocationsDetail" element={<LocationsDetail />} />
         <Route path="/EpisodesDetail" element={<EpisodesDetail />} />
       </Routes>
