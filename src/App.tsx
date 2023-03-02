@@ -11,7 +11,7 @@ import LocationsDetail from "./subpages/locations/LocationsDetail";
 import EpisodesDetail from "./subpages/episodes/EpisodeDetail";
 import { gql, useQuery } from "@apollo/client";
 
-const GET_CHARACTERS = gql`
+const GET_RESULTS = gql`
   query {
     characters {
       results {
@@ -34,7 +34,7 @@ const GET_CHARACTERS = gql`
 
 function App() {
   const [count, setCount] = useState(0);
-  const { loading, error, data } = useQuery(GET_CHARACTERS);
+  const { loading, error, data } = useQuery(GET_RESULTS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
@@ -65,9 +65,6 @@ function App() {
             element={<EpisodesDetail />}
           />
         ))}
-        
-        <Route path="/LocationsDetail" element={<LocationsDetail />} />
-        <Route path="/EpisodesDetail" element={<EpisodesDetail />} />
       </Routes>
       <Footer />
     </>
